@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('d:\work\project\src\photos\2.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+nav {
+  width: 100%;
+  padding: 15px 30px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+nav div {
+  display: flex;
+  gap: 15px;
+}
+
+  .login-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: #0a0563;
+  border-color: white;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease forwards;
+  z-index: 1000;
+}
+
+.login, .register {
+  background: rgba(255, 255, 255, 0.15); 
+  border: 1.5px solid rgba(255, 255, 255, 0.5); 
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  width: 90%;
+  max-width: 500px;
+  max-height: 95vh;
+  padding: 20px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: auto;
+  animation: slideDown 0.3s ease forwards;
+  color: #fff; 
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #4d47c3;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.switch-btn {
+  background: none;
+  border: none;
+  color: #4d47c3;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-decoration: underline;
+  padding: 0;
+}
+
+input {
+width: 100%;
+background: rgba(255, 255, 255, 0.12); 
+color: white;
+padding: 5px;
+margin-bottom: 10px;
+font-size: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+border-radius: 12px;
+box-sizing: border-box;
+outline: none;
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+  
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus {
+border-color: #6c63ff;
+box-shadow: 0 0 8px #6c63ff;
+background: rgba(255, 255, 255, 0.15);}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn button {
+  background-color: #4d47c3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 60px;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn button:hover {
+  background-color: #302b90;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.login, .register {
+  animation: zoomIn 0.5s ease forwards;
+}
+
+.login::-webkit-scrollbar,
+.register::-webkit-scrollbar {
+  width: 5px;
+}
+
+.login::-webkit-scrollbar-thumb,
+.register::-webkit-scrollbar-thumb {
+  background-color: rgba(77, 71, 195, 0.5);
+  border-radius: 10px;
+}
