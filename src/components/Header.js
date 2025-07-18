@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./header.css";
 import Login from "../Login";
 import Register from "../Register";
-
 export default function Header() {
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
@@ -30,13 +29,21 @@ export default function Header() {
     setUser(null);
     window.location.pathname = "/"; 
   };
+  const goHome = () => {
+  window.location.pathname="/";
+};
+const goGame = () => {
+  window.location.pathname="/game";
+}
 
   return (
     <>
       <nav>
         <div style={{ display: "flex", justifyContent: "space-between", padding: "10px 50px" }}>
-          <button className="login-btn">Home</button>
+        <button className="login-btn" onClick={goHome}>Home</button>
 
+              <button className="login-btn" onClick={goGame}>
+                Game </button>
           {user ? (
             <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
               <button className="login-btn" onClick={handleLogout}>
