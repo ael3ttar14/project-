@@ -6,6 +6,20 @@
       "email": "hamo@gmail.com",
       "password": "123456789",
       "phone": "01157718746"
+    },
+    {
+      "id": "17f1",
+      "name": "hambozo hoda",
+      "email": "hamozo@gmail.com",
+      "password": "123123123",
+      "phone": "0102513261"
+    },
+    {
+      "id": "1241",
+      "name": "mahmoud hamdi",
+      "email": "mahmoud@gmail.com",
+      "password": "123456789",
+      "phone": "0122415613"
     }
   ]
 }
